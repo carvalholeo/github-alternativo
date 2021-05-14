@@ -6,6 +6,7 @@ import Index from './pages/Index';
 import UserSeacrh from './pages/UserSearch';
 import Profile from './pages/Profile';
 import Details from './pages/Details';
+import Notifications from './pages/Notifications';
 
 function Routes() {
   return (
@@ -13,6 +14,7 @@ function Routes() {
       <Switch>
         <Route path='/' exact component={Index} />
         <Route path='/search' component={UserSeacrh} />
+        <Route path='/notifications' component={Notifications} />
         <Route path='/profile/:user' component={Details} />
         <Route path='/profile' component={Profile} />
         <Route path='/contact' component={Disabled} />

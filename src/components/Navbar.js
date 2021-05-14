@@ -7,7 +7,7 @@ function Navbar() {
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark mb-3">
       <div className="container-fluid">
         <Link className="navbar-brand" to="/">
-          <i className="bi bi-github d-inline-block" style={{ fontSize: "1.5rem"}}></i>
+          <i className="bi bi-github d-inline-block" style={{ fontSize: "1.5rem" }}></i>
           <span className="ms-3 d-inline-block">GitHub Alt.</span>
         </Link>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,11 +25,11 @@ function Navbar() {
               <NavLink className="nav-link" exact to="/search">Pesquisa</NavLink>
             </li>
             <li className="nav-item dropdown">
-              <NavLink className="nav-link dropdown-toggle" to="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-          </NavLink>
+              <Link className="nav-link dropdown-toggle" to="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Informações pessoais
+              </Link>
               <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><NavLink className="dropdown-item" to="#">Action</NavLink></li>
+                <li><NavLink className="dropdown-item" to="/notifications">Notificações</NavLink></li>
                 <li><NavLink className="dropdown-item" to="#">Another action</NavLink></li>
                 <li><hr className="dropdown-divider" /></li>
                 <li><NavLink className="dropdown-item" to="#">Something else here</NavLink></li>
