@@ -7,6 +7,8 @@ import UserSeacrh from './pages/UserSearch';
 import Profile from './pages/Profile';
 import Details from './pages/Details';
 import Notifications from './pages/Notifications';
+import Gists from './pages/Gists';
+import Emails from './pages/Emails';
 
 function Routes() {
   return (
@@ -18,6 +20,8 @@ function Routes() {
         <Route path='/profile/:user' component={Details} />
         <Route path='/profile' component={Profile} />
         <Route path='/contact' component={Disabled} />
+        <Route path='/gists' component={Gists} />
+        <Route path='/emails' component={Emails} />
         <Route component={Error404} />
       </Switch>
     </div>

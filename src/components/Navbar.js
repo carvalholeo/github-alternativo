@@ -30,9 +30,9 @@ function Navbar() {
               </Link>
               <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li><NavLink className="dropdown-item" to="/notifications">Notificações</NavLink></li>
-                <li><NavLink className="dropdown-item" to="#">Another action</NavLink></li>
+                <li><NavLink className="dropdown-item" to="/gists">Gists</NavLink></li>
                 <li><hr className="dropdown-divider" /></li>
-                <li><NavLink className="dropdown-item" to="#">Something else here</NavLink></li>
+                <li><NavLink className="dropdown-item" to="/emails">E-mails</NavLink></li>
               </ul>
             </li>
             <li className="nav-item">
