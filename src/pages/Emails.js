@@ -1,13 +1,12 @@
 import {useState} from 'react';
 
-function Notifications() {
-  const [notifications, setNotifications] = useState([]);
-  const [showNotifications, setShowNotifications] = useState(false);
-
+function Emails() {
+  const [emails, setEmails] = useState({});
+  const [showEmails, setShowEmails] = useState(false);
 
   return (
     <main>
-      {!showNotifications &&
+      {!showEmails &&
         (
           <div className="d-flex justify-content-center align-items-center">
             <div class="spinner-grow" role="status">
@@ -16,11 +15,11 @@ function Notifications() {
           </div>
         )
       }
-      {showNotifications &&
+      {showEmails &&
         (
           <>
-            <h1>Minhas notificações</h1>
-            <p>Lista de notificações do GitHub</p>
+            <h1>Lista de e-mails</h1>
+            <p>Criar uma lista de e-mails</p>
           </>
         )
       }
@@ -28,4 +27,4 @@ function Notifications() {
   )
 }
 
-export default Notifications;
+export default Emails;

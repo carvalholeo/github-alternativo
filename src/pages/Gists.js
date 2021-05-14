@@ -1,13 +1,12 @@
 import {useState} from 'react';
 
-function Notifications() {
-  const [notifications, setNotifications] = useState([]);
-  const [showNotifications, setShowNotifications] = useState(false);
-
+function Gists() {
+  const [gists, setGists] = useState({});
+  const [showGists, setShowGists] = useState(false);
 
   return (
     <main>
-      {!showNotifications &&
+      {!showGists &&
         (
           <div className="d-flex justify-content-center align-items-center">
             <div class="spinner-grow" role="status">
@@ -16,11 +15,11 @@ function Notifications() {
           </div>
         )
       }
-      {showNotifications &&
+      {showGists &&
         (
           <>
-            <h1>Minhas notificações</h1>
-            <p>Lista de notificações do GitHub</p>
+            <h1>Gists</h1>
+            <p>Gists registrados no GitHub.</p>
           </>
         )
       }
@@ -28,4 +27,4 @@ function Notifications() {
   )
 }
 
-export default Notifications;
+export default Gists;
